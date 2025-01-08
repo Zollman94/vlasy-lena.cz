@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kadeřnictví Lena</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<!-- Google tag (gtag.js) -->
+	<meta name="google-site-verification" content="jHKw929ceLZ1wCOVfL63R4pESC7MPyJ7yOGIjlHtc8c">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-73RCR5BDD6"></script>
+	<script>window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'G-73RCR5BDD6');</script>
+<head>
+	<body>
+		<header class="main-header">
+			<div class="left-side">
+				<div class="logo-container">
+					<img src="img/lena_logo.png" alt="Logo kadeřnictví Lena">
+				</div>
+				<div class="cross"><img src="img/cross.svg" alt="" id="cross"></div>
+			</div>
+			<div class="right-side">
+				<div class="ham"><img src="img/ham.svg" alt="" id="ham"></div>
+				<nav>
+					<ul>
+						<li class="navbar"><a href="index.html">Domů</a></li>
+						<li class="navbar"><a href="prices.html">Ceník</a></li>
+						<li class="navbar"><a href="gallery.html">Galerie</a></li>
+						<li class="navbar"><a href="contact.html">Kontakt</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<div class="content-wrap">
+				<div class="content" style="align-items: center;">
+<div class="contact">
+    <div class="contact-left">
+        <div class="contact-header">
+            <h2>Kontakt</h2>
+        </div>
+        <div class="contact-details">
+                <a href="tel:+420603756868" data-wplink-edit="true"><img src="img/phone.svg" alt=""></a>
+                <a href="tel:+420603756868" data-wplink-edit="true">+420 603 756 868</a><br>
+                <a href="https://www.google.com/maps?q=kadernictvi-lena-holasice-66461">nám. Rudé armády 206</a>
+                <a href="https://www.google.com/maps?q=kadernictvi-lena-holasice-66461">Holasice-Rajhrad</a><br>
+            </div>
+    </div>
+    <div class="contact-right">
+        <img src="img/house.jpg" alt="house">
+    </div>
+</div>
+<div style="width: 66%">
+    <iframe width="100%" height="260" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=n%C3%A1m%C4%9Bst%C3%AD%20Rud%C3%A9%20Arm%C3%A1dy%20206,%20Holasice+(Kade%C5%99nictv%C3%AD%20Lena)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps devices</a></iframe>
+</div>
+</main>
+<footer>
+    <p>&copy; 2025 Kadeřnictví Lena. Všechna práva vyhrazena.</p>
+</footer>
+</body>
+<script>
+document.getElementById('ham').addEventListener('click', function() {
+    const menu = document.querySelector('.right-side ul');
+        menu.style.display = 'flex';
+    const ham = document.querySelector('.ham');
+        ham.style.display = 'none';
+    const header = document.querySelector('.main-header');
+    header.style.flexDirection = 'column';
+    const cross = document.querySelector('.cross');
+    cross.style.display = 'block';
+});
+document.getElementById('cross').addEventListener('click', function() {
+    const menu = document.querySelector('.right-side ul');
+        menu.style.display = 'none';
+    const ham = document.querySelector('.ham');
+        ham.style.display = 'block';
+    const header = document.querySelector('.main-header');
+    header.style.flexDirection = 'row';
+    const cross = document.querySelector('.cross');
+    cross.style.display = 'none';
+});
+</script>
+</html>
