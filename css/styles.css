@@ -102,7 +102,9 @@ li:hover {
 .interduciton {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    align-self: center;
+    width: 90%;
 }
 
 .left-text {
@@ -112,7 +114,7 @@ li:hover {
     align-content: center;
     flex-wrap: wrap;
     width: 500px;
-    margin-right: 3%;
+    margin-left: 40px;
 }
 
 .left-text p {
@@ -121,7 +123,6 @@ li:hover {
     font-family: 'Roboto', sans-serif;
 }
 .left-text h2 {
-    margin-top: 15px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -160,7 +161,6 @@ li:hover {
 .right-image img {
     width: 400px;
     height: auto;
-    margin-left: 3%;
 }
 
 .logos {
@@ -171,7 +171,9 @@ li:hover {
     /* flex-wrap: nowrap; */
     margin-top: 20px;
     width: 80%;
+    justify-content: space-between;
     align-self: center;
+    width: 90%;
 }
 
 .main-logo {
@@ -191,7 +193,7 @@ li:hover {
 .side-logos {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
     flex-wrap: wrap;
 }
@@ -359,9 +361,11 @@ footer {
     align-items: flex-start;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 100%;
     flex-wrap: wrap;
     align-content: flex-start;
+    justify-content: space-between;
+    align-self: center;
+    width: 90%;
 }
 
 .contact-right {
@@ -369,7 +373,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
     height: 350px;
     max-width: 600px;
 }
@@ -386,7 +390,7 @@ footer {
 .contact-header {
     align-self: flex-start;
     margin-bottom: 20px;
-    margin-left: 17px;
+    margin-left: 0px;
     font-size: 22px;
 }
 .contact-address, .contact-phone, .contact-email, .contact-parking {
@@ -406,7 +410,7 @@ footer {
     width: 25px;
     height: 25px;
     align-self: left;
-    margin-left: 20px;
+    margin-left: 0px;
     margin-right: 10px;
 }
 .contact-house {
@@ -414,7 +418,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 75%;
+    width: 90%;
+    align-self: center;
 }
 .contact-house img {
         max-width: 100%;
@@ -422,6 +427,61 @@ footer {
         height: 500px;
         object-fit: cover;
 }
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    min-width: 500px;
+  }
+  
+  caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  thead,
+  tfoot {
+    background-color: rgb(228 240 245);
+  }
+  
+  th,
+  td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+    text-align: center;
+  }
+  .has-text-align-left {
+    text-align: left;
+  }
+  td:last-of-type {
+    text-align: center;
+  }
+  
+  tbody > tr:nth-of-type(even) {
+    background-color: rgb(245, 245, 245);
+  }
+  
+  tfoot th {
+    text-align: right;
+  }
+  
+  tfoot td {
+    font-weight: bold;
+  }
+  .cenik {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-self: center;
+    width: 90%;
+  }
 @media screen and (max-width: 1100px) {
     .main-header {
         flex-direction: row;
@@ -490,8 +550,19 @@ footer {
     .left-text {
         width: 100%;
         margin-right: 0;
+        max-width: 90%;
     }
-
+    .cenik {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        justify-content: center;
+        align-self: center;
+        width: 90%;
+        margin-top: 20px;
+    }
     .right-image img {
         width: 100%;
         margin-left: 0;
@@ -588,44 +659,3 @@ footer {
         height: auto;
     }
 }
-table {
-    border-collapse: collapse;
-    border: 2px solid rgb(140 140 140);
-    font-family: sans-serif;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-  }
-  
-  caption {
-    caption-side: bottom;
-    padding: 10px;
-    font-weight: bold;
-  }
-  
-  thead,
-  tfoot {
-    background-color: rgb(228 240 245);
-  }
-  
-  th,
-  td {
-    border: 1px solid rgb(160 160 160);
-    padding: 8px 10px;
-  }
-  
-  td:last-of-type {
-    text-align: center;
-  }
-  
-  tbody > tr:nth-of-type(even) {
-    background-color: rgb(237 238 242);
-  }
-  
-  tfoot th {
-    text-align: right;
-  }
-  
-  tfoot td {
-    font-weight: bold;
-  }
-  
