@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kadeřnictví Lena</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<head>
+<body>
+<header class="main-header">
+    <div class="left-side">
+        <div class="logo-container">
+            <img src="img/lena_logo.png" alt="Logo kadeřnictví Lena">
+        </div>
+        <div class="cross"><img src="img/cross.svg" alt="" id="cross"></div>
+    </div>
+    <div class="right-side">
+        <div class="ham"><img src="img/ham.svg" alt="" id="ham"></div>
+        <nav>
+            <ul>
+                <li class="navbar"><a href="index.html">Domů</a></li>
+                <li class="navbar"><a href="prices.html">Ceník</a></li>
+                <li class="navbar"><a href="gallery.html">Galerie</a></li>
+                <li class="navbar"><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="content-wrap">
+        <div class="content" style="
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        ">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="has-text-align-left" data-align="left">
+                            <strong>Základní služby</strong>
+                        </td>
+                        <td>
+                            <strong>Krátké / Dlouhé</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="has-text-align-left" data-align="left">Mytí, foukání</td>
+                        <td>300,- / 500,-</td>
+                    </tr>
+                    <tr>
+                        <td class="has-text-align-left" data-align="left">Střih, mytí, foukání</td>
+                        <td>400,- / 600,-</td>
+                    </tr>
+                    <tr>
+                        <td class="has-text-align-left" data-align="left">Barva, střih, foukaná</td>
+                        <td>800,- / 1200,-</td>
+                    </tr>
+                    <tr>
+                        <td class="has-text-align-left" data-align="left">Melír, střih, foukaná</td>
+                        <td>900,- / 1500,-</td>
+                    </tr>
+                    <tr>
+                        <td class="has-text-align-left" data-align="left">Tónování</td>
+                        <td>od 300,-</td>
+                    </tr>
+                    <tr>
+                        <td class="has-text-align-left" data-align="left">Balayage, střih, foukaná</td>
+                        <td>1500,- / 2600,-</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <strong>Ostatní služby v salónu</strong>
+                        </td>
+                        <td>
+                            <strong>Krátké / Dlouhé</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Masáž hlavy</td>
+                        <td>550,-</td>
+                    </tr>
+                    <tr>
+                        <td>Bondaplex terapie</td>
+                        <td>600,- / 900,-</td>
+                    </tr>
+                    <tr>
+                        <td>Regenerační zábal, laminace</td>
+                        <td>600,- / 1400,-</td>
+                    </tr>
+                    <tr>
+                        <td>Přidání Bondaplexu do barvy, melíru atd.</td>
+                        <td>od 200,-</td>
+                    </tr>
+                    <tr>
+                        <td>Pánský střih</td>
+                        <td>300,-</td>
+                    </tr>
+                    <tr>
+                        <td>Dětský střih do 15 let</td>
+                        <td>200,-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</main>
+<footer>
+    <p>&copy; 2025 Kadeřnictví Lena. Všechna práva vyhrazena.</p>
+</footer>
+</body>
+<script>
+document.getElementById('ham').addEventListener('click', function() {
+    const menu = document.querySelector('.right-side ul');
+        menu.style.display = 'flex';
+    const ham = document.querySelector('.ham');
+        ham.style.display = 'none';
+    const header = document.querySelector('.main-header');
+    header.style.flexDirection = 'column';
+    const cross = document.querySelector('.cross');
+    cross.style.display = 'block';
+});
+document.getElementById('cross').addEventListener('click', function() {
+    const menu = document.querySelector('.right-side ul');
+        menu.style.display = 'none';
+    const ham = document.querySelector('.ham');
+        ham.style.display = 'block';
+    const header = document.querySelector('.main-header');
+    header.style.flexDirection = 'row';
+    const cross = document.querySelector('.cross');
+    cross.style.display = 'none';
+});
+</script>
+</html>
