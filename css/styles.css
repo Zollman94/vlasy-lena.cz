@@ -161,6 +161,8 @@ li:hover {
 .right-image img {
     width: 400px;
     height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0px gray;
 }
 
 .logos {
@@ -551,6 +553,8 @@ table {
         width: 100%;
         margin-right: 0;
         max-width: 90%;
+        margin-left: 0px;
+        align-self: center;
     }
     .cenik {
         display: flex;
@@ -644,6 +648,11 @@ table {
     }
     #right-button, #left-button {
         display: none;
+    }
+    table {
+        min-width: 10px;
+        width: 100%;
+        margin-top: 20px;
     }
 }
 @media screen and (max-width: 400px) {
