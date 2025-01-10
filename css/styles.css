@@ -682,6 +682,16 @@ table {
         width: 100%;
         margin-top: 20px;
     }
+    .contact-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+        height: 350px;
+        max-width: 90vw;
+        min-width: 10px;
+    }
 }
 @media screen and (max-width: 400px) {
     .review-card-name {
