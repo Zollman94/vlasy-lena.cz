@@ -84,3 +84,41 @@
     display: flex;
 }
 
+@media screen and (max-width: 970px) {
+    .gallery-hair {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1000px;
+        width: 90vw;
+        margin: 20px 0;
+      }
+      .gallery-hair img {
+        width: 150px;
+        height: auto;
+        aspect-ratio: 3 / 4;
+        overflow: hidden;
+        margin: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, filter 0.3s ease;
+      }
+      .gallery-salon {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1000px;
+        width: 90vw;
+        margin: 20px 0;
+      }
+      
+      .gallery-salon img {
+        width: 150px;
+        height: auto;
+        overflow: hidden;
+        margin: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, filter 0.3s ease;
+      }
+}
