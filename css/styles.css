@@ -4,6 +4,7 @@
 }
 html {
     scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
 }
 a {
     color: inherit;
@@ -207,13 +208,16 @@ li:hover {
 }
 
 /* Review Section */
-
+.review-header {
+    align-self: center;
+    width: 90%;
+}
 .review {
     display: grid;
     gap: 20px;
     grid-auto-flow: column;
     grid-auto-columns: 32%;
-    margin-top: 20px;
+    margin-top: 5px;
     padding-bottom: 10px;
     position: relative;
     overflow-x: auto; /* Enable horizontal scrolling */
@@ -241,7 +245,8 @@ li:hover {
     justify-content: flex-start;
     align-content: start;
     flex-wrap: nowrap;
-    width: 310px;
+    width: 30vw;
+    max-width: 310px;
     height: 150px;
     margin-top: 20px;
     margin-left: 15px;
@@ -304,7 +309,8 @@ li:hover {
 }
 
 .review-card-text {
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
+    flex-wrap: wrap;
 }
 /* Footer */
 
@@ -395,12 +401,23 @@ footer {
     margin-left: 0px;
     font-size: 22px;
 }
-.contact-address, .contact-phone, .contact-email, .contact-parking {
+.contact-address, .contact-phone, .contact-email, .contact-parking, .contact-openhours {
     display: flex;
     align-content: center;
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 10px;
+}
+
+.contact-details p {
+    margin-left: 35px;
+}
+
+.contact-address p, .contact-phone p, .contact-email p, .contact-parking p, .contact-openhours p {
+    margin-left: 0px;
+}
+.contact-openhours p {
+    align-self: flex-end;
 }
 .contact-details {
     display: flex;
@@ -429,14 +446,23 @@ footer {
         height: 500px;
         object-fit: cover;
 }
-
+.contact-social {
+    align-self: flex-start;
+}
+.contact-social img {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    margin-top: 20px;
+}
 table {
     border-collapse: collapse;
     border: 2px solid rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
     font-size: 0.9rem;
     letter-spacing: 1px;
-    min-width: 500px;
+    width: 45%;
+    min-width: 200px;
   }
   
   caption {
@@ -484,7 +510,7 @@ table {
     align-self: center;
     width: 90%;
   }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1024px) {
     .main-header {
         flex-direction: row;
         height: auto;

@@ -4,11 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kadeřnictví Lena</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/gallery.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-<head>
+    <script src="js/popup.js"></script>
+</head>
 <body>
 <header class="main-header">
     <div class="left-side">
@@ -22,39 +24,51 @@
         <nav>
             <ul>
                 <li class="navbar"><a href="index.html">Domů</a></li>
-                <li class="navbar"><a href="prices.html">Ceník</a></li>
+                <li class="navbar"><a href="#" onclick="goToSection('index.html', 'cenik')">Ceník</a></li>
                 <li class="navbar"><a href="gallery.html">Galerie</a></li>
-                <li class="navbar"><a href="contact.html">Kontakt</a></li>
+                <li class="navbar"><a href="#" onclick="goToSection('index.html', 'contact')">Kontakt</a></li>
             </ul>
         </nav>
     </div>
 </header>
 <main>
+<div class="popup" id="popup" onclick="hidePopup()">
+    <img id="popup-img" src="" alt="Full Size Photo">
+</div>
+<div class="content-wrapper">
+    <section class="gallery-salon">
+        <img src="media/salon_ (1).jpg" onclick="showPopup(this)">
+        <img src="media/salon_ (2).jpg" onclick="showPopup(this)">
+        <img src="media/salon_ (3).jpg" onclick="showPopup(this)">
+        <img src="media/salon_ (4).jpg" onclick="showPopup(this)">
+        <img src="media/salon_ (5).jpg" onclick="showPopup(this)">
+        <img src="media/salon_ (6).jpg" onclick="showPopup(this)">
+    </section>
+    <h1>Ukázky mé práce</h1>
+    <section class="gallery-hair">
+        <img src="media/hair_ (1).jpg" onclick="showPopup(this)">
+        <img src="media/hair_ (2).jpg" onclick="showPopup(this)">
+        <img src="media/hair_ (3).jpg" onclick="showPopup(this)">
+        <img src="media/hair_ (4).jpg" onclick="showPopup(this)">
+        <img src="media/hair_ (5).jpg" onclick="showPopup(this)">
+        <img src="media/hair_ (6).jpg" onclick="showPopup(this)">
+        <img src="media/hair_ (7).jpg" onclick="showPopup(this)">
+        <img src="media/hair_ (8).jpg" onclick="showPopup(this)">
+        <img src="media/hair_ (9).jpg" onclick="showPopup(this)">
+        <img src="media/hair_ (10).jpg" onclick="showPopup(this)">
+        <img src="media/hair_ (11).jpg" onclick="showPopup(this)">
+        <img src="media/hair_ (12).jpg" onclick="showPopup(this)">
+    </section>
+</div>
 </main>
 <footer>
     <p>&copy; 2025 Kadeřnictví Lena. Všechna práva vyhrazena.</p>
 </footer>
-</body>
+<script src="js/hamburger_menu.js"></script>
 <script>
-document.getElementById('ham').addEventListener('click', function() {
-    const menu = document.querySelector('.right-side ul');
-        menu.style.display = 'flex';
-    const ham = document.querySelector('.ham');
-        ham.style.display = 'none';
-    const header = document.querySelector('.main-header');
-    header.style.flexDirection = 'column';
-    const cross = document.querySelector('.cross');
-    cross.style.display = 'block';
-});
-document.getElementById('cross').addEventListener('click', function() {
-    const menu = document.querySelector('.right-side ul');
-        menu.style.display = 'none';
-    const ham = document.querySelector('.ham');
-        ham.style.display = 'block';
-    const header = document.querySelector('.main-header');
-    header.style.flexDirection = 'row';
-    const cross = document.querySelector('.cross');
-    cross.style.display = 'none';
-});
+    function goToSection(page, elementId) {
+        window.location.href = `${page}#${elementId}`;
+    }
 </script>
+</body>
 </html>
