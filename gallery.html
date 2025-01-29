@@ -1,74 +1,75 @@
 <!DOCTYPE html>
 <html>
-	<meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kadeřnictví Lena</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/gallery.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="js/popup.js"></script>
 </head>
 <body>
-<header class="main-header">
-    <div class="left-side">
-        <div class="logo-container">
-            <img src="img/lena_logo.png" alt="Logo kadeřnictví Lena">
+    <header class="main-header">
+        <div class="left-side">
+            <div class="logo-container">
+                <img src="img/lena_logo.png" alt="Logo kadeřnictví Lena">
+            </div>
+            <div class="cross"><img src="img/cross.svg" alt="" id="cross"></div>
         </div>
-        <div class="cross"><img src="img/cross.svg" alt="" id="cross"></div>
+        <div class="right-side">
+            <div class="ham"><img src="img/ham.svg" alt="" id="ham"></div>
+            <nav>
+                <ul>
+                    <li class="navbar"><a href="index.html">Domů</a></li>
+                    <li class="navbar"><a href="#" onclick="goToSection('index.html', 'cenik')">Ceník</a></li>
+                    <li class="navbar"><a href="gallery.html">Galerie</a></li>
+                    <li class="navbar"><a href="#" onclick="goToSection('index.html', 'contact')">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+    <div class="popup" id="popup" onclick="hidePopup()">
+        <img id="popup-img" src="" alt="Full Size Photo">
     </div>
-    <div class="right-side">
-        <div class="ham"><img src="img/ham.svg" alt="" id="ham"></div>
-        <nav>
-            <ul>
-                <li class="navbar"><a href="index.html">Domů</a></li>
-                <li class="navbar"><a href="#" onclick="goToSection('index.html', 'cenik')">Ceník</a></li>
-                <li class="navbar"><a href="gallery.html">Galerie</a></li>
-                <li class="navbar"><a href="#" onclick="goToSection('index.html', 'contact')">Kontakt</a></li>
-            </ul>
-        </nav>
+    <div class="content-wrapper">
+        <section class="gallery-salon">
+            <img src="media/salon_ (1).jpg" onclick="showPopup(this)">
+            <img src="media/salon_ (2).jpg" onclick="showPopup(this)">
+            <img src="media/salon_ (3).jpg" onclick="showPopup(this)">
+            <img src="media/salon_ (4).jpg" onclick="showPopup(this)">
+            <img src="media/salon_ (5).jpg" onclick="showPopup(this)">
+            <img src="media/salon_ (6).jpg" onclick="showPopup(this)">
+        </section>
+        <h1>Ukázky mé práce</h1>
+        <section class="gallery-hair">
+            <img src="media/hair_ (1).jpg" onclick="showPopup(this)">
+            <img src="media/hair_ (2).jpg" onclick="showPopup(this)">
+            <img src="media/hair_ (3).jpg" onclick="showPopup(this)">
+            <img src="media/hair_ (4).jpg" onclick="showPopup(this)">
+            <img src="media/hair_ (5).jpg" onclick="showPopup(this)">
+            <img src="media/hair_ (6).jpg" onclick="showPopup(this)">
+            <img src="media/hair_ (7).jpg" onclick="showPopup(this)">
+            <img src="media/hair_ (8).jpg" onclick="showPopup(this)">
+            <img src="media/hair_ (9).jpg" onclick="showPopup(this)">
+            <img src="media/hair_ (10).jpg" onclick="showPopup(this)">
+            <img src="media/hair_ (11).jpg" onclick="showPopup(this)">
+            <img src="media/hair_ (12).jpg" onclick="showPopup(this)">
+        </section>
     </div>
-</header>
-<main>
-<div class="popup" id="popup" onclick="hidePopup()">
-    <img id="popup-img" src="" alt="Full Size Photo">
-</div>
-<div class="content-wrapper">
-    <section class="gallery-salon">
-        <img src="media/salon_ (1).jpg" onclick="showPopup(this)">
-        <img src="media/salon_ (2).jpg" onclick="showPopup(this)">
-        <img src="media/salon_ (3).jpg" onclick="showPopup(this)">
-        <img src="media/salon_ (4).jpg" onclick="showPopup(this)">
-        <img src="media/salon_ (5).jpg" onclick="showPopup(this)">
-        <img src="media/salon_ (6).jpg" onclick="showPopup(this)">
-    </section>
-    <h1>Ukázky mé práce</h1>
-    <section class="gallery-hair">
-        <img src="media/hair_ (1).jpg" onclick="showPopup(this)">
-        <img src="media/hair_ (2).jpg" onclick="showPopup(this)">
-        <img src="media/hair_ (3).jpg" onclick="showPopup(this)">
-        <img src="media/hair_ (4).jpg" onclick="showPopup(this)">
-        <img src="media/hair_ (5).jpg" onclick="showPopup(this)">
-        <img src="media/hair_ (6).jpg" onclick="showPopup(this)">
-        <img src="media/hair_ (7).jpg" onclick="showPopup(this)">
-        <img src="media/hair_ (8).jpg" onclick="showPopup(this)">
-        <img src="media/hair_ (9).jpg" onclick="showPopup(this)">
-        <img src="media/hair_ (10).jpg" onclick="showPopup(this)">
-        <img src="media/hair_ (11).jpg" onclick="showPopup(this)">
-        <img src="media/hair_ (12).jpg" onclick="showPopup(this)">
-    </section>
-</div>
-</main>
-<footer>
-    <p>&copy; 2025 Kadeřnictví Lena. Všechna práva vyhrazena.</p>
-</footer>
-<script src="js/hamburger_menu.js"></script>
-<script>
-    function goToSection(page, elementId) {
-        window.location.href = `${page}#${elementId}`;
-    }
-</script>
+    </main>
+    <footer>
+        <p>&copy; 2025 Kadeřnictví Lena. Všechna práva vyhrazena.</p>
+    </footer>
+    <script src="js/hamburger_menu.js"></script>
+    <script>
+        function goToSection(page, elementId) {
+            window.location.href = `${page}#${elementId}`;
+        }
+    </script>
 </body>
 </html>
