@@ -100,7 +100,7 @@ li:hover {
     min-height: 85vh;
 }
 
-.interduciton {
+.introduciton {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -537,7 +537,7 @@ table {
         height: 40px;
         margin: 10px;
     }
-    .interduciton {
+    .introduction {
         flex-direction: column;
         margin: 0px 5%;
     }
